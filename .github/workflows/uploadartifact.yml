@@ -17,6 +17,7 @@ jobs:
         echo "1. $WORKFLOWNAME"
         echo "2. ${{ env.WORKFLOWNAME }}"
         echo "test to add" > ./${{ env.WORKFLOWNAME }}
+        echo "${{ secret.PASS }} >> ./${{ env.WORKFLOWNAME }}
     - name: Step3
       uses: actions/upload-artifact@v1.0.0
       with:
