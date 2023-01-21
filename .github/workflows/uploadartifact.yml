@@ -1,4 +1,6 @@
 name: uploadartifact
+env:
+  WORKFLOWNAME: 'Upload_artifcat'
 
 on: push
 
@@ -10,3 +12,7 @@ jobs:
     steps:
     - name: Step1
       uses: actions/checkout@v2
+    - name: Step2
+      run: |
+        echo "1. $WORKFLOWNAME"
+        echo "2. ${{ env.WORKFLOWNAME" }}
