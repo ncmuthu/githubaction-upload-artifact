@@ -3,7 +3,7 @@ name: uploadartifact
 on: push
 
 jobs:
-  job1:
+  upload-artifact:
     name: Job1
     runs-on: ubuntu-latest
     
