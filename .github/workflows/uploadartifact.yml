@@ -18,7 +18,7 @@ jobs:
         echo "2. ${{ env.WORKFLOWNAME }}"
         echo "test to add" > ./${{ env.WORKFLOWNAME }}
     - name: Step3
-      uses: action/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v1.0.0
       with:
         name: ${{ env.WORKFLOWNAME }}
         path: ./${{ env.WORKFLOWNAME }}
