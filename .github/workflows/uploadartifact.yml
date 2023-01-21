@@ -15,4 +15,4 @@ jobs:
     - name: Step2
       run: |
         echo "1. $WORKFLOWNAME"
-        echo "2. ${{ env.WORKFLOWNAME" }}
+        echo "2. ${{ env.WORKFLOWNAME }}"
